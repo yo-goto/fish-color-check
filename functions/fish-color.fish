@@ -6,7 +6,7 @@ function fish-color -d "Show fish shell configured colors"
         -- $argv
     or return 1
 
-    set --local version_fish_color "v0.1.0"
+    set --local version_fish_color "v0.1.1"
     # color set
     set --local cc (set_color $fish_color_comment)
     set --local ce (set_color $fish_color_error)
@@ -57,7 +57,7 @@ function fish-color -d "Show fish shell configured colors"
             set -l color_value_prep $color_set_element[2..-1]
             set -l color_value (string trim -c "'" -- $color_value_prep )
 
-            if set -q sample_text
+            if test -n "$sample_text"
                 echo $color_name (set_color $color_value) $color_value "\"$sample_text\"" $cn
             else
                 echo $color_name (set_color $color_value) $color_value $cn

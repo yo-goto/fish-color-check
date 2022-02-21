@@ -1,2 +1,4 @@
+- v0.1.1
+    - fixed sample text display
 - v0.1.0
     - updated default color preview system
