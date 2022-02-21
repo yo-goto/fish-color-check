@@ -2,5 +2,6 @@
     - fixed sample text display
     - removed unncessary color
     - updated completions: removed files suggetion
+    - changed plugin & repo name `fish-color` to `fish-color-check`
 - v0.1.0
     - updated default color preview system

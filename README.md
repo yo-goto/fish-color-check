@@ -1,28 +1,28 @@
-# fish-color 🌈
+# fish-color-check 🌈
 > *Simple fish plugin to check your fish shell configured colors*
 
-![demo image](/assets/fish-color-image.jpg)
+![demo image](/assets/fish-color-check-image.jpg)
 
 ## Installation
 
 Using [fisher](https://github.com/jorgebucaran/fisher):
 
 ```console
-fisher install yo-goto/fish-color
+fisher install yo-goto/fish-color-check
 ```
 
 Update
 
 ```console
-fisher update yo-goto/fish-color
+fisher update yo-goto/fish-color-check
 ```
 
 ## Usage
 
 ```console
 USAGE:
-      fish-color [OPTION]
-      fish-color [SAMPLETEXT]
+      fish-color-check [OPTION]
+      fish-color-check [SAMPLETEXT]
 OPTIONS:
       -v, --version     Show version info
       -h, --help        Show help

@@ -1,4 +1,4 @@
-function fish-color -d "Show fish shell configured colors"
+function fish-color-check -d "Show fish shell configured colors"
     argparse \
         -x 'v,h,p' \
         'v/version' 'h/help' \
@@ -17,7 +17,7 @@ function fish-color -d "Show fish shell configured colors"
         echo "version: " $version_fish_color
         return
     else if set -q _flag_help
-        __fish-color_help
+        __fish-color-check_help
         return
     else if set -q _flag_print
         # echo "-->prints a list of the 16 named colors"$cn
@@ -66,10 +66,10 @@ function fish-color -d "Show fish shell configured colors"
 end
 
 
-function __fish-color_help
+function __fish-color-check_help
     echo "USAGE:"
-    echo "      fish-color [OPTION]"
-    echo "      fish-color [SAMPLETEXT]"
+    echo "      fish-color-check [OPTION]"
+    echo "      fish-color-check [SAMPLETEXT]"
     echo "OPTIONS:"
     echo "      -v, --version     Show version info"
     echo "      -h, --help        Show help"
