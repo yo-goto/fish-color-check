@@ -1,4 +1,6 @@
 - v0.1.1
     - fixed sample text display
+    - removed unncessary color
+    - updated completions: removed files suggetion
 - v0.1.0
     - updated default color preview system
