@@ -1,7 +1,7 @@
 # fish-color-check 🌈
 > *Simple fish plugin to check your fish shell configured colors*
 
-![demo image](/assets/fish-color-check-image.jpg)
+![demo image](./assets/fish-color-check-demo.jpg)
 
 ## Installation
 
