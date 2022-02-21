@@ -8,7 +8,6 @@ function fish-color -d "Show fish shell configured colors"
 
     set --local version_fish_color "v0.1.1"
     # color set
-    set --local cc (set_color $fish_color_comment)
     set --local ce (set_color $fish_color_error)
     set --local cn (set_color $fish_color_normal)
 
@@ -21,7 +20,7 @@ function fish-color -d "Show fish shell configured colors"
         __fish-color_help
         return
     else if set -q _flag_print
-        # echo $cc"-->prints a list of the 16 named colors"$cn
+        # echo "-->prints a list of the 16 named colors"$cn
         set_color --print-colors
         return
     else if set -q _flag_test
@@ -33,7 +32,7 @@ function fish-color -d "Show fish shell configured colors"
         return 1
     else
         # main process
-        # echo $cc"-->Show the list of shell colors"$cn
+        # echo "-->Show the list of shell colors"$cn
         set --local first_grep_list (string split -n " " (set -U | command grep fish_color))
         set --local matched (string match -- 'fish_color_*' $first_grep_list) # count should be 23
         set --local match_index # count should be 23
