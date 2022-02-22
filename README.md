@@ -29,6 +29,9 @@ OPTIONS:
       -p, --print       Show a list of the 16 named colors
 ```
 
+You can also check fish color variable names in the docs.
+- [Interactive use — fish-shell 3.3.1 documentation](https://fishshell.com/docs/current/interactive.html?highlight=pager_color#syntax-highlighting-variables)
+
 ## Change log
 - [CHANGELOG.md](/CHANGELOG.md)
 

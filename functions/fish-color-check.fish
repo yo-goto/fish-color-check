@@ -6,7 +6,7 @@ function fish-color-check -d "Show fish shell configured colors"
         -- $argv
     or return 1
 
-    set --local version_fish_color "v0.1.1"
+    set --local version_fish_color "v0.2.0"
     # color set
     set --local ce (set_color $fish_color_error)
     set --local cn (set_color $fish_color_normal)
@@ -33,9 +33,10 @@ function fish-color-check -d "Show fish shell configured colors"
     else
         # main process
         # echo "-->Show the list of shell colors"$cn
-        set --local first_grep_list (string split -n " " (set -U | command grep fish_color))
-        set --local matched (string match -- 'fish_color_*' $first_grep_list) # count should be 23
-        set --local match_index # count should be 23
+        # all the color variables: https://fishshell.com/docs/current/interactive.html?highlight=pager_color#syntax-highlighting-variables
+        set --local first_grep_list (string split -n " " (set -U | command grep 'fish.*_color'))
+        set --local matched (string match -- 'fish*_color_*' $first_grep_list)
+        set --local match_index
         set --local full (count $matched)
         
         for i in (seq 1 (count $matched))

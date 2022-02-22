@@ -1,3 +1,5 @@
+- v0.2.0
+    - updated grep pattern to see `fish_pager_color_*`
 - v0.1.1
     - fixed sample text display
     - removed unncessary color
